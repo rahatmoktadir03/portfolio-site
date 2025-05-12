@@ -80,11 +80,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "TumorScope - Brain Tumor Classifier",
+    des: "Analyze MRI scans and detect brain tumors with precision using deep learning. TumorScope offers intuitive insights and model explanations in real time.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "/ui.https://github.com/rahatmoktadir03/tumor-scope",
   },
   {
     id: 3,
