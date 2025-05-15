@@ -1,4 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaFile } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -66,6 +66,18 @@ const Hero = () => {
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1PTSMONXDCWNmdIipPjTacT471i6ms6tM/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2"
+          >
+            <MagicButton
+              title="View my resume"
+              icon={<FaFile />}
               position="right"
             />
           </a>
