@@ -75,7 +75,14 @@ export const projects = [
     title: "City Map Visualizer",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/map.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/three.svg",
+      "/fm.svg",
+      "/remix.svg",
+    ],
     link: "https://citywide-visualizer.vercel.app/",
   },
   {
@@ -98,7 +105,7 @@ export const projects = [
     id: 4,
     title: "PixelQuest",
     des: "Dive into discussions, share insights, and connect with fellow gamers on PixelQuest — a vibrant community built for gaming enthusiasts.",
-    img: "/hub.png",
+    img: "/pixel.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/rahatmoktadir03/hobby-hub",
   },
@@ -121,30 +128,6 @@ export const projects = [
 ];
 
 export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
@@ -189,31 +172,31 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "CodePath Tech Fellow",
+    desc: "Mentored students in web development, leading sessions and fostering a strong tech community.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/codepath.png",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Headstarter Software Engineering Resident",
+    desc: "Built AI and full-stack projects while receiving mentorship from engineers and growing a strong tech network.",
+    className: "md:col-span-2",
+    thumbnail: "/headstarter.jpeg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    title: "The Build Fellowship - Student Consultant",
+    desc: "Mentored by a Build Fellow to engineer a 3D vision pipeline with stereo matching and point cloud generation using Python.",
+    className: "md:col-span-2",
+    thumbnail: "/build.jpeg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "BASTA Fellow",
+    desc: "Completed a 10-week career prep fellowship focused on supporting first-gen college students in tech.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/basta.jpeg",
   },
 ];
 
