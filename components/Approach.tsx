@@ -5,7 +5,7 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <section className="w-full py-20">
+    <section id="approach" className="w-full py-20">
       <h1 className="heading">
         My <span className="text-purple">approach</span>
       </h1>
@@ -13,11 +13,9 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Vision & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="Every project I build starts with clarity. I define what it needs to accomplish, who it’s for, and how it should feel to use. I sketch out the structure, map the user flow, and pinpoint key features—this phase is all about aligning the technical side with a creative vision. It's where I connect purpose to execution before touching any code."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +24,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Design In Code"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="This is where I shift into builder mode. I code with design in mind—creating clean, scalable architecture while keeping things intuitive and visually cohesive. I iterate fast: prototype, test, refine. Whether I’m shaping a user interface or engineering a system behind it, I focus on translating vision into an experience that feels right."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +44,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Polish, Deploy & Reflect"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="With everything in place, I tighten up performance, clean the edges, and prep for launch. I obsess over the little things—loading speed, responsiveness, UI transitions—because that’s where quality stands out. Once it’s live, I take time to reflect: What worked? What can improve? That feedback fuels the next build."
         >
           <CanvasRevealEffect
             animationSpeed={3}
