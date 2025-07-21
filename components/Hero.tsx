@@ -62,25 +62,27 @@ const Hero = () => {
             learning, and data.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1PTSMONXDCWNmdIipPjTacT471i6ms6tM/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2"
-          >
-            <MagicButton
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <a href="#about" title="Show my work">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1_MPPrsuyreXnIczSHrsm31uRLCV2zs6F/view"
+              target="_blank"
+              rel="noopener noreferrer"
               title="View my resume"
-              icon={<FaFile />}
-              position="right"
-            />
-          </a>
+            >
+              <MagicButton
+                title="View my resume"
+                icon={<FaFile />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

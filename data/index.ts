@@ -1,9 +1,8 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Approach", link: "#approach" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -86,12 +85,13 @@ export const projects = [
       "/mapbox.svg",
     ],
     link: "https://citywide-visualizer.vercel.app/",
+    githubLink: "https://github.com/rahatmoktadir03/citywide-visualizer",
   },
   {
     id: 2,
     title: "TumorScope",
     des: "Analyze MRI scans and detect brain tumors with precision using deep learning. TumorScope offers intuitive insights and model explanations in real time.",
-    img: "/p2.svg",
+    img: "/tumor.png",
     iconLists: [
       "/groq.svg",
       "/python.svg",
@@ -100,13 +100,14 @@ export const projects = [
       "/tensor.svg",
       "/keras.svg",
     ],
-    link: "https://github.com/rahatmoktadir03/tumor-scope",
+    link: "https://tumor-scope.streamlit.app/",
+    githubLink: "https://github.com/rahatmoktadir03/tumor-scope",
   },
   {
     id: 3,
     title: "US-Bank Customer Churn Prediction",
     des: "Leverage machine learning to anticipate customer behavior and reduce churn. Analyze key indicators, visualize trends, and make data-driven retention strategies.",
-    img: "/p3.svg",
+    img: "/churn.png",
     iconLists: [
       "/replit.svg",
       "/python.svg",
@@ -115,7 +116,8 @@ export const projects = [
       "/scikit.svg",
       "/chatgpt.svg",
     ],
-    link: "https://github.com/rahatmoktadir03/customer-churn-prediction",
+    link: "https://us-bank-customer-churn-prediction.streamlit.app/",
+    githubLink: "https://github.com/rahatmoktadir03/customer-churn-prediction",
   },
   {
     id: 4,
@@ -123,7 +125,8 @@ export const projects = [
     des: "Dive into discussions, share insights, and connect with fellow gamers on PixelQuest — a vibrant community built for gaming enthusiasts.",
     img: "/pixel.png",
     iconLists: ["/re.svg", "/js.svg", "/supa.svg", "/netlify.svg", "/vite.svg"],
-    link: "https://github.com/rahatmoktadir03/hobby-hub",
+    link: "https://pixelquesthub.netlify.app/",
+    githubLink: "https://github.com/rahatmoktadir03/hobby-hub",
   },
   {
     id: 5,
@@ -137,7 +140,8 @@ export const projects = [
       "/jupyter.svg",
       "/numpy.svg",
     ],
-    link: "https://rahatmoktadir03.github.io/pixel-to-point-cloud/landing.html",
+    link: "https://rahatmoktadir03.github.io/pixel-to-point-cloud/",
+    githubLink: "https://github.com/rahatmoktadir03/pixel-to-point-cloud",
   },
   {
     id: 6,
@@ -152,6 +156,7 @@ export const projects = [
       "/material.svg",
     ],
     link: "https://flashcardapp-alpha.vercel.app/",
+    githubLink: "https://github.com/rahatmoktadir03/flashcard-app",
   },
 ];
 
