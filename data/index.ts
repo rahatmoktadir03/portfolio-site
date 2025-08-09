@@ -145,18 +145,19 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Flashcard Fusion",
-    des: "Boost your learning with intelligent flashcards. Generate, review, and retain knowledge with AI-assisted precision.",
-    img: "/flashcard.png",
+    title: "Echo Verse Chat",
+    des: "A full-stack real-time chat and video communication platform. Features instant messaging, high-quality WebRTC video calls, and scalable serverless architecture.",
+    img: "/echo.png",
     iconLists: [
+      "/next.svg",
       "/re.svg",
-      "/js.svg",
-      "/stripe.svg",
-      "/fire.svg",
-      "/material.svg",
+      "/ts.svg",
+      "/tail.svg",
+      "/webrtc.svg",
+      "/convex.svg",
     ],
-    link: "https://flashcardapp-alpha.vercel.app/",
-    githubLink: "https://github.com/rahatmoktadir03/flashcard-app",
+    link: "https://echo-verse-phi.vercel.app/",
+    githubLink: "https://github.com/rahatmoktadir03/echo-verse-chat",
   },
 ];
 

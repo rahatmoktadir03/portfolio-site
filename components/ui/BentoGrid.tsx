@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
@@ -51,10 +51,47 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["React.js", "Python", "Typescript"];
-  const rightLists = ["TensorFlow", "Next.js", "SQL", "Convex"];
+  // Enhanced tech stack with categories
+  const techStackCategories = [
+    {
+      category: "Frontend",
+      left: ["React.js", "Next.js", "TypeScript"],
+      right: ["Tailwind CSS", "HTML/CSS", "JavaScript"],
+    },
+    {
+      category: "Backend",
+      left: ["Node.js", "Python", "SQL"],
+      right: ["Convex", "Firebase", "PostgreSQL"],
+    },
+    {
+      category: "AI/ML",
+      left: ["TensorFlow", "Keras", "Pandas"],
+      right: ["NumPy", "Scikit-learn", "OpenCV"],
+    },
+    {
+      category: "Tools & Cloud",
+      left: ["Git", "Docker", "Vercel"],
+      right: ["AWS", "Streamlit", "Jupyter"],
+    },
+  ];
 
+  const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [copied, setCopied] = useState(false);
+
+  // Carousel effect for tech stack
+  useEffect(() => {
+    if (id === 3) {
+      const interval = setInterval(() => {
+        setCurrentCategoryIndex(
+          (prevIndex) => (prevIndex + 1) % techStackCategories.length
+        );
+      }, 3000); // Change every 3 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [id, techStackCategories.length]);
+
+  const currentCategory = techStackCategories[currentCategoryIndex];
 
   const defaultOptions = {
     loop: copied,
@@ -141,30 +178,56 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+            <div className="flex flex-col gap-2 lg:gap-4 w-fit absolute -right-3 lg:-right-2">
+              {/* Category indicator */}
+              <div className="text-center text-purple-400 text-sm lg:text-base font-semibold mb-2">
+                {currentCategory.category}
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
+
+              {/* Tech stack carousel */}
+              <div className="flex gap-1 lg:gap-5">
+                {/* Left column */}
+                <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                  {currentCategory.left.map((item, i) => (
+                    <span
+                      key={`${currentCategoryIndex}-left-${i}`}
+                      className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                      lg:opacity-100 rounded-lg text-center bg-[#10132E] transition-all duration-500 
+                      transform animate-fadeIn"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                  <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
+                </div>
+
+                {/* Right column */}
+                <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                  <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
+                  {currentCategory.right.map((item, i) => (
+                    <span
+                      key={`${currentCategoryIndex}-right-${i}`}
+                      className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                      lg:opacity-100 rounded-lg text-center bg-[#10132E] transition-all duration-500 
+                      transform animate-fadeIn"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Dots indicator */}
+              <div className="flex justify-center gap-2 mt-4">
+                {techStackCategories.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentCategoryIndex
+                        ? "bg-purple-400 scale-125"
+                        : "bg-gray-600"
+                    }`}
+                  />
                 ))}
               </div>
             </div>

@@ -71,7 +71,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://drive.google.com/file/d/1_MPPrsuyreXnIczSHrsm31uRLCV2zs6F/view"
+              href="https://drive.google.com/file/d/1R38WV_MVPjH3W8BWiuEFCFegbIzeujaf/view"
               target="_blank"
               rel="noopener noreferrer"
               title="View my resume"
